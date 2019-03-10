@@ -27,6 +27,8 @@ public class Initializer implements CommandLineRunner{
         Stream.of("Food Environment Atlas").forEach(name -> repository.save(new Dataset(name)));
 
         repository.findAll().forEach(System.out::println);
+
+
     }
 
 }
