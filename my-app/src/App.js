@@ -33,7 +33,10 @@ class App extends Component {
           </div>
           <img src={logo} className="App-logo" alt="logo" />
           <div>
-            <LineChart data={{"2017-05-13": 2, "2017-05-14": 5}} colors={["#fff", "#666"]} />
+            <LineChart id="Age vs. Maximum Heartrate" 
+            data={{63: 150, 37: 187, 41: 172, 56: 178, 57: 163,
+             57: 148, 56: 153}} colors={["#fff", "#fff",]}
+             xtitle = "Age" ytitle = "Maximum Heartrate" />
           </div>
           <div className = "App-intro">
             <h2>Dataset List</h2>
