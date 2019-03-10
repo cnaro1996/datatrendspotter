@@ -29,7 +29,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <div>
-            <h1>Data Trend Spotter.</h1>
+            <h1>Trend Spotter</h1>
           </div>
           <img src={logo} className="App-logo" alt="logo" />
           <div>

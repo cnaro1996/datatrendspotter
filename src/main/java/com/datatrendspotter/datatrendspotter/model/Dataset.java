@@ -5,7 +5,10 @@ import lombok.NoArgsConstructor;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 
+import com.datatrendspotter.datatrendspotter.ExcelReader;
+
 import javax.persistence.*;
+
 import java.util.ArrayList;
 
 
@@ -22,4 +25,8 @@ public class Dataset {
     @NonNull
     String name;
     String contributor;
+    @Transient
+    ExcelReader reader = new ExcelReader();
+    ArrayList<ArrayList<String>> attributes = reader.getAttributes(reader.getSheets());
+
 }
